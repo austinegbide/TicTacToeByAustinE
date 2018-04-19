@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_main_menu">Main Menu</string>
+
+    <string name="one_player">ONE PLAYER</string>
+    <string name="two_players">TWO PLAYERS</string>
+
+
+    <string name="threeByThree">3 by 3 BOARD</string>
+    <string name="fiveByFive">5 by 5 BOARD</string>
+    <string name="about">ABOUT</string>
+
+    <string name="exit">EXIT</string>
+
+    <string name="aboutTxt1">Developed by:\nAustin Egbide\naustinegbide@gmail.com \n \nBeing ALC 2.0 final project for beginners \"Take a Climb Challenge\".</string>
+    <string name="aboutTxt2">Feel free to contact me for your android app design and development needs.</string>
+
+
+    <string name="scoreboard">SCORE BOARD</string>
+
+    <string name="player_turn_text">Player 1\'s Turn</string>
+    <string name="reset">Reset Game</string>
+
+
+    <!--<string name="player_text">Player</string>-->
+    <string name="computer_text">Computer</string>
+    <string name="player_text_1">Player 1</string>
+    <string name="player_text_2">Player 2</string>
+
+    <string name="games_won">Games Won</string>
+    <string name="games_drawn">Games Drawn</string>
+    <string name="games_lost">Games Lost</string>
+
+    <string name="game_over">Game Over</string>
+    <string name="comp_play_status">Computer is playing</string>
+
+</resources>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="10dp"
+    tools:context="com.example.android.tic_tac_toebyaustine.ThreeMultiActivity">
+
+
+    <TextView
+        android:id="@+id/player_turn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/player_turn_text"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/winner_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/player_turn_id"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="#000000"
+        android:baselineAligned="false"
+        android:gravity="center">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/c1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="start"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:onClick="cell_clicked"
+                android:tag="1"
+                android:text=""
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/c2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/box_3by3_margin"
+                android:layout_marginRight="@dimen/box_3by3_margin"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:onClick="cell_clicked"
+                android:tag="2"
+                android:text=""
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/c3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:onClick="cell_clicked"
+                android:tag="3"
+                android:text=""
+                android:textSize="50sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/c4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="@dimen/box_3by3_margin"
+                android:layout_marginTop="@dimen/box_3by3_margin"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:onClick="cell_clicked"
+                android:tag="4"
+                android:text=""
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/c5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="@dimen/box_3by3_margin"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:onClick="cell_clicked"
+                android:tag="5"
+                android:text=""
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/c6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="@dimen/box_3by3_margin"
+                android:layout_marginTop="@dimen/box_3by3_margin"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:onClick="cell_clicked"
+                android:tag="6"
+                android:text=""
+                android:textSize="50sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/c7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:onClick="cell_clicked"
+                android:tag="7"
+                android:text=""
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/c8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/box_3by3_margin"
+                android:layout_marginRight="@dimen/box_3by3_margin"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:onClick="cell_clicked"
+                android:tag="8"
+                android:text=""
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/c9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/cell_shape"
+                android:gravity="center"
+                android:minHeight="100dp"
+                android:minWidth="100dp"
+                android:onClick="cell_clicked"
+                android:tag="9"
+                android:text=""
+                android:textSize="50sp" />
+        </TableRow>
+    </TableLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:hint="@string/reset"
+        app:srcCompat="@drawable/reset_button" />
+
+</RelativeLayout>
